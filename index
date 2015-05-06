@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--Bootstrap-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    
+<div data-role="page" id="pageone" data-transition="flip" style="background-image:url(img/background.jpg); background-size:100% 100%; opacity:1;">
+	
+    <div data-display="overlay" data-role="panel" id="myPanel" data-theme="b" style="opacity:0.7; background:#366; background-image:url(img/consulting4.jpg); background-size:100% 100%; opacity:0.9;"> 
+   
+    	<ul data-role="listview" style="opacity:0.95;" class="ui-content">
+        <li><a href="#pageone" class="ui-btn ui-btn-inline ui-btn-active">Welcome</a></li>
+        <li><a href="" data-icon="info">Biography</a></li>
+        <li><a href="" data-icon="check">Tributes <span class="ui-li-has-count">25</span></a></li>
+        <li><a href="#Program" data-icon="gear">Funeral Program</a></li>
+        <li><a href="" class="ui-icon-back">Location</a></li>
+        <li><a href="" data-icon="alert">About Developer</a></li>
+        </ul>
+        <div data-role="footer" class="ui-footer-fixed" align="right">
+    	<a href="#pageone" data-role="footer" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left ui-footer-fullscreen">Close</a>
+        </div>
+   
+  	</div> 
+	
+     
+    
+     <div data-role="main" class="ui-content">
+         	<h1 align="center"> Welcome To The Funeral App</h1>
+            <h3 align="center">A Celebratioin of Life</h3>
+    </div>
+     
+     <br>
+	<div data-role="footer" style="opacity:0.8;" data-theme="b" class="ui-footer-fixed">
+    	 <div data-role="navbar" data-iconpos="top">
+        	<ul>
+            	<li><a href="#myPanel" class="ui-btn" data-icon="arrow-r">Menu</a>
+                </li>
+            	<li><a href="" data-icon="home" class="ui-btn-active">Home</a>
+                </li>
+                <li><a href="#Program" data-icon="star">Program</a>
+                </li>
+                <li><a href="" data-icon="grid">Gallery</a>
+                </li>
+            </ul>  
+         </div>       	
+     </div> 
+</div>
+
+<!--Programs Page -->
+
+<div data-role="page" id="Program" data-transition="flip" style="background-color:#0CF; background-image:url(img/app-blurred-bg-14.jpg); background-size:100% 100%; background-repeat:no-repeat;">
+	
+    <div data-display="overlay" data-role="panel" id="myPanel" data-theme="b" style="opacity:0.7; background:#366; background-image:url(img/consulting4.jpg); background-size:100% 100%; opacity:0.9;"> 
+   
+    	<ul data-role="listview" style="opacity:0.95;" class="ui-content">
+        <li><a href="#pageone" class="ui-btn ui-btn-inline ui-btn-active">Welcome</a></li>
+        <li><a href="" data-icon="info">Biography</a></li>
+        <li><a href="" data-icon="check">Tributes <span class="ui-li-has-count">25</span></a></li>
+        <li><a href="#program" data-icon="gear">Funeral Program</a></li>
+        <li><a href="" class="ui-icon-back">Location</a></li>
+        <li><a href="" data-icon="alert">About Developer</a></li>
+        </ul>
+        <div data-role="footer" class="ui-footer-fixed" align="right">
+    	<a href="#pageone" data-role="footer" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left ui-footer-fullscreen">Close</a>
+        </div>
+   
+  	</div>
+	<div data-role="header" data-theme="a" style="opacity:0.7; background-image:url(img/bg-solid-hd.jpg); background-repeat:no-repeat; background-size:100% 100%;" data-inline="false">
+    	<div class="ui-grid-a">
+        	<div class="ui-block-a" align="center" style="width:60%;">
+           	<p style="text-align:center; margin-left:0%; margin-top:5%; font-size:100%; font-weight:900; font-family:'Century Gothic', 'Century Schoolbook', 'Adobe Garamond Pro'; text-transform:capitalize; text-shadow:2px 2px 1px #666600; color:#FFF;">Funeral Arrangements</p>
+   			</div>
+    		<div class="ui-block-b" data-shadow="true" align="right" style="width:40%;">        
+            <a href="" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-search ui-btn-icon-left ui-mini">Search</a>
+    		</div>
+        </div>
+    </div>
+    
+	<div data-fullscreen="true" class="ui-content">
+    	
+        <h4 style="color:#CCC; text-shadow:2px 2px 1px #666600;">Table of content</h4>
+    </div>
+    
+    <div data-role="footer" style="opacity:0.8;" data-theme="b" class="ui-footer-fixed">
+    	 <div data-role="navbar" data-iconpos="top">
+        	<ul>
+            	<li><a href="#myPanel" class="ui-btn" data-icon="arrow-r">Menu</a>
+                </li>
+            	<li><a href="#pageone" data-icon="home">Home</a>
+                </li>
+                <li><a href="#Program" data-icon="star" class="ui-btn-active">Program</a>
+                </li>
+                <li><a href="" data-icon="grid">Gallery</a>
+                </li>
+            </ul>  
+         </div>       	
+     </div>
+
+</div>
+</body>
+</html>
